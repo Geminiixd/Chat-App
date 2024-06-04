@@ -1,0 +1,108 @@
+:root {
+    /* CSS HEX */
+    --seasalt: #f8f9faff;
+    --antiflash-white: #e9ecefff;
+    --platinum: #dee2e6ff;
+    --french-gray: #ced4daff;
+    --french-gray-2: #adb5bdff;
+    --slate-gray: #6c757dff;
+    --outer-space: #495057ff;
+    --onyx: #343a40ff;
+    --eerie-black: #212529ff;
+
+    /* CSS HSL */
+    --seasalt: hsla(210, 17%, 98%, 1);
+    --antiflash-white: hsla(210, 16%, 93%, 1);
+    --platinum: hsla(210, 14%, 89%, 1);
+    --french-gray: hsla(210, 14%, 83%, 1);
+    --french-gray-2: hsla(210, 11%, 71%, 1);
+    --slate-gray: hsla(208, 7%, 46%, 1);
+    --outer-space: hsla(210, 9%, 31%, 1);
+    --onyx: hsla(210, 10%, 23%, 1);
+    --eerie-black: hsla(210, 11%, 15%, 1);
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-div {
+    top: 0;
+    z-index: -2;
+    height: 100vh;
+    background-color: #1a1a1a;
+    background-image: radial-gradient(ellipse at 50% -20%, rgb(31, 31, 68), rgba(255, 255, 255, 0));
+}
+
+
+/* body {
+    background-color: var(--eerie-black);
+} */
+
+form {
+    width: 350px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(200px);
+    background-color: rgb(7, 0, 25);
+    background-image: linear-gradient(139deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .03) 30%, rgba(255, 255, 255, .01) 66%, rgba(255, 255, 255, .08));
+    margin: 20px;
+}
+
+input {
+    background-color: var(--onyx);
+    color: var(--platinum);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-block: 10px;
+}
+
+button {
+    background-color: var(--french-gray);
+    padding: 10px 20px;
+    width: 50%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 5px 50px rgba(22, 22, 127, 0.557);
+}
+
+.form-parent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes message {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+li {
+    color: var(--antiflash-white);
+    margin-block: 10px;
+    backdrop-filter: blur(20px);
+    background-color: #ffffff0f;
+    padding: 20px 10px;
+    border-radius: 20px 20px 20px 0px;
+    animation: message 0.2s cubic-bezier(0, 0.93, 0, 0.96);
+}
+
+ul {
+    list-style: none;
+}
+
+.boldmsg {
+    font-weight: bold;
+}
