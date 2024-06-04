@@ -1,4 +1,4 @@
-const socket = io('ws://localhost:3500')
+const socket = io('https://chat-app-one-gray.vercel.app/')
 
 
 const activity = document.querySelector('.activity')
